@@ -1,0 +1,155 @@
+/* BASE */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* FOCUS ACCESIBLE */
+a:focus,
+button:focus,
+.nav-link:focus {
+  outline: 3px dashed #0056b3;
+  outline-offset: 3px;
+}
+
+/* CONTENEDOR CV */
+.cv-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* COLUMNA IZQUIERDA */
+.left-column {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 2rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.left-column h3 {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.left-column p {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.left-section {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.left-section h5 {
+  border-bottom: 1px solid #ffffff55;
+  padding-bottom: .4rem;
+  margin-bottom: .6rem;
+}
+
+.left-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+/* COLUMNA DERECHA */
+.right-column {
+  padding: 2rem;
+  width: 65%;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h4 {
+  border-left: 5px solid #0d47a1;
+  padding-left: .6rem;
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-period {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+ul li {
+  margin-bottom: .4rem;
+}
+
+/* CARDS */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* FOOTER */
+footer {
+  background-color: #e9ecef;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* CONTRASTE ALTO (opcional) */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.high-contrast a {
+  color: #0ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+#heatmapContainer canvas {
+  z-index: 5;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

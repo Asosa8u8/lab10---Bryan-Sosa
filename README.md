@@ -48,22 +48,21 @@ Es necesario contar con **una cámara web activa** y un navegador moderno como C
 
 ---
 
-📁 Proyecto WebGazer Heatmap
+## 📁 Estructura del proyecto
+Proyecto WebGazer Heatmap
 ├── index.html
 ├── acerca.html
 ├── proyectos.html
 ├── README.md
-│
-├── 📁 css
+├── css/
 │   └── desktop.css
-│
-├── 📁 js
+├── js/
 │   ├── accessibility.js
 │   ├── eyetracking.js
 │   └── heatmap.min.js
-│
-├── 📁 img
-│   ├── Foto Carnet.png
-│   ├── sismed.png
-│   ├── sispasantes.png
-│   └── captura_heatmap.png
+└── img/
+    ├── Foto Carnet.png
+    ├── sismed.png
+    ├── sispasantes.png
+    └── captura_heatmap.png
+
